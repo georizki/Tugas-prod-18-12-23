@@ -11,7 +11,7 @@
 let Angka1 = 125
 let Angka2 = 25
 let Hasil14 = (Angka1 + Angka2)/2
-console.log (`14. Jadi nilai akhir dari ${Angka1} dan ${Angka2} adalah : ` + Hasil14)
+console.log (` nilai akhir dari ${Angka1} dan ${Angka2} adalah : ` + Hasil14)
 
 //Menghitung jam ke detik//
 let jam = 4
@@ -28,7 +28,7 @@ console.log(`Jadi ${jam1} jam sama dengan ${menit} menit`)
 //Menghitung kilometer ke meter//
 let Kilometer = 7
 let Meter = Kilometer * 1000
-
+ 
 console.log(`Jadi ${Kilometer} Kilometer sama dengan ${Meter} meter`)
 
 //Menghitung Kilogram ke gram//
@@ -36,6 +36,54 @@ let Kilogram = 3
 let gram = Kilogram * 1000
 
 console.log(`Jadi ${Kilogram} Kilometer sama dengan ${gram} gram`)
+
+
+//membuat 3 harga barang jika harga diatas 100rb maka beri diskon 10%
+let harga1 = 50000
+let harga2 = 50000
+let harga3 = 100000
+let total  = harga1 + harga2 + harga3
+
+let harga4 = total * 10/100
+
+if(total > 100000) {
+    hargat = total - harga4
+} else {
+    hargat = total
+}
+
+console.log(`jadi harga yang harus dibayar adalah ${hargat}`)
+
+//membuat program 3 gaji
+let waktu = 6
+let gaji1 = 100000
+let gaji2 = 200000
+let gaji3 = 300000
+
+if(waktu < 6){
+    gaji = `yang rajin ya kerjanya, ini gajinya ${gaji1}`
+}else if(waktu == 6){
+    gaji = `kerja bagus, ini gajinya ${gaji2}`
+}else if(waktu > 6){
+    gaji = `jangan lupa istirahat, ini gajinya ${gaji3}`
+}
+
+console.log(gaji)
+
+//membuat program kondisi pintu air(meter)
+let tinggiAir = 700
+
+if(tinggiAir <= 500){
+    Kondisi = "Aman"
+}else if( tinggiAir <= 600){
+    Kondisi = "Waspada"
+}else if( tinggiAir <= 650){
+    Kondisi = "SIAGA 2"
+}else if(tinggiAir > 650){
+    Kondisi = "SIAGA 1"
+}
+
+console.log(`Kondisi Air Saat Ini ${Kondisi}`)
     </script>
 </body>
 </html>
